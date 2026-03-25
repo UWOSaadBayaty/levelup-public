@@ -24,12 +24,6 @@
 <h2 align="center"> <strong> LevelUp</strong> </h2>
 <img src="/env/LevelUpLogo.jpeg" height="200">
 
-| Name| Email|
-| :------- | :--- |
-|Saad Al-Bayaty	|salbaya3@uwo.ca|
-|Omar El Terras |oelterra@uwo.ca|
-|Manav Preet Singh	|msing344@uwo.ca|
-|Bilal Saad	|bsaad2@uwo.ca|
 </div>
 
 
