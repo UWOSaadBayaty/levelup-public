@@ -16,8 +16,7 @@
 >
 > The purpose of this project is to help students optimize their resumes and covet letters, as well as help them prepare for their interviews by providing them mock interview.
 >
->**Faculty Advisor:**  Dr. Alexandra L'Heureux, alheure2@uwo.ca <br/>
->**Industry Sponsor:**  
+
 
 <div align="center">
   
