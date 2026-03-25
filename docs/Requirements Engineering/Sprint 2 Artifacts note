@@ -1,0 +1,45 @@
+Sprint 2 Submission Note – Unchanged Architecture & Object Design Artifacts
+
+Why this README exists
+During the Sprint 2 submission package review, we noticed that the Sprint 2 deliverables specify that the uploaded source code must be accompanied by:
+- Sprint 2 feature documentation
+- Architecture diagram(s) updated based on the implemented slice
+- Object design diagram(s) updated based on the implemented slice
+- Updated burndown chart
+
+We emailed our advisor to confirm what to do if the UML/object design and architecture diagrams did not change structurally during Sprint 2. Dr.Ouda instructed us to create and submit a README explaining what and why some artifacts and diagrams remained unchanged despite the addition of Sprint 2 code and functionality.
+
+What was delivered in Sprint 2
+In Sprint 2, we extended the Sprint 1 increment with additional code and new functionality, integrated into a single deployable system as required for the Sprint 2 product increment.
+
+See: `docs/Requirements Engineering/Sprint2_review` for the Sprint 2 product description, new features, and deployment/run instructions.
+
+Why the Architecture Diagram did NOT change
+Although Sprint 2 introduced new features and additional code, the team’s high-level architecture did not change because:
+
+1. No new architectural components were introduced
+   - Sprint 2 additions were implemented within existing services/modules established in Sprint 1.
+   - There were no new external systems, deployment nodes, or runtime services added that would require a change in the architecture diagram.
+
+2. No change in system boundaries or integration style
+   - Integrations added in Sprint 2 followed the same interaction pattern and boundaries already shown in Sprint 1’s architecture.
+
+3. The Sprint 2 work was an implementation-level extension
+   - Sprint 2 focused on expanding capabilities, improving completeness, and making the increment more than a prototype without altering the structural layout of the system.
+
+
+Why the Object Design (UML) did NOT change
+Similarly, the UML/Object Design diagrams remained unchanged because:
+
+1. No new core domain entities or class responsibilities were added
+   - Sprint 2 work primarily extended behavior inside existing classes/modules rather than introducing new major classes.
+
+2. Relationships and design patterns stayed consistent
+   - Inheritance, associations, and key interfaces did not materially change. Sprint 2 enhancements fit inside the same object model already documented.
+
+3. Changes were at the method/function level
+   - Sprint 2 added/updated functions, validation, UI logic, and/or flows, but did not change the core object structure enough to justify modifying the UML diagrams.
+
+Therefore, we re-submitted the Sprint 1 UML/Object Design artifacts and Architecture Diagram as the correct representation of the current object model.
+
+Sprint 2 introduced meaningful new code and functionality. However, the system’s architecture and core object design did not change structurally. For that reason, the existing diagrams remain accurate and were re-submitted unchanged.

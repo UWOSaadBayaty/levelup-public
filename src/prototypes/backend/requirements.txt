@@ -1,0 +1,12 @@
+fastapi==0.124.0
+firebase_admin==7.1.0
+huggingface_hub==1.1.7
+openai==2.9.0
+pdfplumber==0.11.8
+psycopg2==2.9.11
+pydantic==2.12.5
+starlette==0.46.2
+uvicorn==0.38.0
+python-multipart==0.0.20
+stripe==14.3.0
+python-dotenv

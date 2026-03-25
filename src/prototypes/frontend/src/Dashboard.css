@@ -1,0 +1,373 @@
+
+.home-page {
+  min-height: 100vh;
+  background-color: #f5f7fb;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Afacad', sans-serif;
+  color: #222;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 0rem;
+}
+
+.logo-icon {
+  width: 130px;
+  height: 50px;
+  position: relative;
+}
+
+.logo-icon::before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  width: 8px;
+  height: 8px;
+  border-bottom: 2px solid #00a884;
+  border-left: 2px solid #00a884;
+  transform: rotate(-45deg);
+}
+
+.logo-text {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #00796b;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.nav-link:hover {
+  opacity: 0.75;
+}
+
+.nav-button {
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 999px;
+  background: #00b894;
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 184, 148, 0.35);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+}
+
+.nav-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0, 184, 148, 0.45);
+  opacity: 0.95;
+}
+
+.hero {
+  text-align: center;
+  padding: 1rem 1.5rem 7rem;
+}
+
+.hero-title {
+  font-size: clamp(3.4rem, 4.5vw, 3rem) !important;
+  margin-bottom: 0.75rem;
+  font-weight: 800;
+}
+
+.hero-subtitle {
+  max-width: 540px;
+  margin: 0 auto 1.75rem;
+  font-size: 1.45rem;
+  color: #555;
+}
+
+.hero-cta {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.cta-button {
+  text-decoration: none;
+  border-radius: 999px;
+  padding: 0.75rem 1.6rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-button.primary {
+  background: #00b894;
+  color: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 184, 148, 0.35);
+}
+
+.cta-button.secondary {
+  background: #ffffff;
+  color: #00b894;
+  border: 1px solid #00b894;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+
+.hero-resumes {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 0;
+  position: relative;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+
+  opacity: 0;
+  transform: translateY(30px);
+  animation: heroFadeIn 1s ease-out 0.25s forwards;
+  z-index: 1;
+}
+
+.resume-card {
+  position: relative;
+  width: 400px;
+  aspect-ratio: 8.5 / 11; 
+  background: #ffffff;
+  border: 1px solid #e0e4ef;
+  overflow: visible;
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.25);
+  border-radius: 0; 
+}
+
+.resume-center {
+  width: 520px;
+  z-index: 3;
+  transform: translateY(-10px);
+}
+
+.resume-left,
+.resume-right {
+  z-index: 2;
+  transform: translateY(-80px);
+}
+
+.resume-left {
+  margin-right: -80px;
+}
+
+.resume-right {
+  margin-left: -80px;
+}
+
+.resume-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  border-radius: 0;
+}
+
+@keyframes heroFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section {
+  padding: 4rem 1.5rem;
+}
+
+.section-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 3rem;
+  align-items: center;
+}
+
+.section-title {
+  max-width: 1100px;
+  margin: 0 auto 2.5rem;
+  font-size: 3rem !important;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 1rem;
+
+}
+
+.green-section {
+  background: #1abc9c;
+  color: #ffffff;
+  border-radius: 28px;
+  margin: -220px 0.75rem 0;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  position: relative;
+  z-index: 2;
+}
+
+.white-section {
+  background: #ffffff;
+  border-radius: 28px;
+  margin: 50px 0.75rem 2rem;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.section-text {
+  text-align: left;
+}
+
+.section-text h2 {
+  font-size: 3.4rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-text p {
+  font-size: 1.3rem;
+  line-height: 1.9;
+  margin-bottom: 0.9rem;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-list li + li {
+  margin-top: 1.2rem;
+}
+
+.feature-list h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.3rem;
+}
+
+.feature-list p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.section-image {
+  display: flex;
+  justify-content: center;
+}
+
+.section-img {
+  width: 100%;
+  max-width: 540px;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 26px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.2);
+  animation: fadeInImg 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInImg {
+  to {
+    opacity: 1;
+  }
+}
+
+.footer {
+  background: #0c9980;
+  color: #ffffff;
+  padding: 1.5rem 1rem 1.25rem;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-bottom: 1rem;
+}
+
+.footer-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.footer-copy {
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .section-inner {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .green-section,
+  .white-section {
+    margin: 0 0.75rem 1.5rem;
+  }
+
+  .hero {
+    padding-top: 2.5rem;
+    padding-bottom: 4rem;
+  }
+
+  .hero-resumes {
+    gap: 0.5rem;
+  }
+
+  .resume-center {
+    width: 280px;
+  }
+
+  .resume-left,
+  .resume-right {
+    display: none;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+    margin-bottom: 1.8rem;
+  }
+
+  .section-text p,
+  .feature-list p {
+    font-size: 1.05rem;
+  }
+}
